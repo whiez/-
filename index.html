@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<title>밀리</title>
 </head>
 <body>
@@ -75,7 +77,7 @@
 							<li><a href="#">TMO(여행장병 안내소)</a></li>
 						</ul>
 					</li>
-					<li><a href="blog.html">군사 용어</a></li>
+					<li><a href="military-word.html">군사 용어</a></li>
 					<li><a href="contact.html">육군 행사</a></li>
 					<li class="has-children">
 						<a href="#">체력 단련</a>
@@ -158,9 +160,10 @@
 
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-1 mb-3">
-								<i class="flaticon-bacteria-1"></i>
-							</span>
+							<!-- <span class="hex color-1 mb-3">
+								<i class="fi fi-rr-wheat"></i>
+							</span> -->
+							<h1>🍛</h1>
 						</div>
 						<div>
 							<h3>부대별 식단 정보</h3>
@@ -172,9 +175,10 @@
 				<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-2 mb-3">
+							<!-- <span class="hex color-2 mb-3">
 								<i class="flaticon-lungs"></i>
-							</span>
+							</span> -->
+							<h1>🌴</h1>
 						</div>
 						<div>
 							<h3>병사 휴양 정보</h3>
@@ -183,26 +187,30 @@
 					</div>
 				</div>
 				<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+					<a href="military-word.html">
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-3 mb-3">
+							<!-- <span class="hex color-3 mb-3">
 								<i class="flaticon-bacteria"></i>
-							</span>
+							</span> -->
+							<h1>💬</h1>
+							</div>
+							<div>
+								<h3 style="color: black">군사 용어</h3>
+								<p>곧 입대하는데 군사 용어를 하나도 몰라 걱정이세요? 밀리가 알려줄 거예요.</p>
+							</div>
 						</div>
-						<div>
-							<h3>군사 용어</h3>
-							<p>곧 입대하는데 군사 용어를 하나도 몰라 걱정이세요? 밀리가 알려줄 거예요.</p>
-						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
 
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-4 mb-3">
+							<!-- <span class="hex color-4 mb-3">
 								<i class="flaticon-test-tubes"></i>
-							</span>
+							</span> -->
+							<h1>🪖</h1>
 						</div>
 						<div>
 							<h3>육군 행사</h3>
@@ -214,9 +222,10 @@
 				<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-5 mb-3">
+							<!-- <span class="hex color-5 mb-3">
 								<i class="flaticon-vaccine"></i>
-							</span>
+							</span> -->
+							<h1>💂🏼</h1>
 						</div>
 						<div>
 							<h3>채용/모집 정보</h3>
@@ -227,9 +236,10 @@
 				<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
 					<div class="feature-1 d-block">
 						<div class="mb-3">
-							<span class="hex color-6 mb-3">
+							<!-- <span class="hex color-6 mb-3">
 								<i class="flaticon-mask"></i>
-							</span>
+							</span> -->
+							<h1>📰</h1>
 						</div>
 						<div>
 							<h3>그 외 다양한 정보</h3>
@@ -564,15 +574,39 @@
 					<div class="widget">
 						<h3>SNS</h3>
 						<ul class="list-unstyled social">
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-							<li><a href="#"><span class="icon-pinterest"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
+							<li><a><span class="icon-instagram" style="cursor: pointer;" onclick='
+							swal({
+								title: "아직은 해당 기능을 제공하지 않아요.",
+								icon:"error",
+								});'></span></a></li>
+							<li><a><span class="icon-twitter" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-facebook" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-linkedin" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-pinterest" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-dribbble" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
 						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
+					</div>
+				</div>
 
 				<div class="col-lg-2 ml-auto">
 					<div class="widget">
@@ -608,7 +642,7 @@
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p>&copy;<script>document.write(new Date().getFullYear());</script>. 최현우 All Rights Reserved.</a> <!-- License information: https://untree.co/license/ -->
+					<p>&copy;2022.최현우 All Rights Reserved.</a> <!-- License information: https://untree.co/license/ -->
 					</p>
 
 				</div>

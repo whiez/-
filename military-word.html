@@ -27,10 +27,12 @@
     <link rel="stylesheet" href="css/glightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>XedLab &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>밀리</title>
   </head>
   <body>
-    <div class="site-mobile-menu site-navbar-target">
+    <!-- <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
           <span class="icofont-close js-menu-toggle"></span>
@@ -87,26 +89,133 @@
           </a>
         </div>
       </div>
+    </nav> -->
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav position-absolute mt-3 clearfix">
+      <div class="container">
+        <div class="site-navigation">
+          <a
+            href="index.html"
+            class="logo m-0 float-start text-white"
+            style="font-family: 'CWDangamAsac-Bold'; font-size: 35px"
+            >밀리</a
+          >
+
+          <ul
+            class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start"
+          >
+            <li class="active">
+              <a href="index.html" class="text-white">메인</a>
+            </li>
+            <li class="has-children">
+              <a href="#" class="text-white">부대별 식단 정보</a>
+              <ul class="dropdown">
+                <li><a href="#">육군훈련소 식단 정보</a></li>
+                <li><a href="#">PX 인기상품 정보</a></li>
+                <li><a href="#">8902부대 식단 정보</a></li>
+                <li><a href="#">3389부대 식단 정보</a></li>
+                <li><a href="#">6335부대 식단 정보</a></li>
+                <li><a href="#">5322부대 식단 정보</a></li>
+                <li><a href="#">7369부대 식단 정보</a></li>
+                <li><a href="#">2171부대 식단 정보</a></li>
+                <li><a href="#">1691부대 식단 정보</a></li>
+                <li><a href="#">6282부대 식단 정보</a></li>
+                <li><a href="#">9030부대 식단 정보</a></li>
+                <li><a href="#">623부대 식단 정보</a></li>
+                <li><a href="#">6176부대 식단 정보</a></li>
+                <li><a href="#">3296부대 식단 정보</a></li>
+                <li><a href="#">623부대 식단 정보</a></li>
+                <!-- <li class="has-children">
+									<a href="#">Menu Two</a>
+									<ul class="dropdown">
+										<li><a href="#">Sub Menu One</a></li>
+										<li><a href="#">Sub Menu Two</a></li>
+										<li><a href="#">Sub Menu Three</a></li>
+									</ul>
+								</li> -->
+              </ul>
+            </li>
+            <li class="has-children">
+              <a href="#" class="text-white">병사 휴양 정보</a>
+              <ul class="dropdown">
+                <li><a href="#">병사 할인 혜택</a></li>
+                <li><a href="#">군 휴양시설 운영</a></li>
+                <li><a href="#">TMO(여행장병 안내소)</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="text-white">군사 용어</a></li>
+            <li><a href="contact.html" class="text-white">육군 행사</a></li>
+            <li class="has-children">
+              <a href="#" class="text-white">체력 단련</a>
+              <ul class="dropdown">
+                <li><a href="#">육군 신체측정 정보</a></li>
+                <li><a href="#">연도별 장병 체력검정 기준</a></li>
+                <li><a href="#">체력단련장 정보</a></li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a href="#" class="text-white">의료 정보</a>
+              <ul class="dropdown">
+                <li><a href="#">군 감염병 정보</a></li>
+                <li><a href="#">군 병원 정보</a></li>
+              </ul>
+            </li>
+            <li><a href="services.html" class="text-white">전투 정보</a></li>
+            <li class="has-children">
+              <a href="#" class="text-white">채용/모집 정보</a>
+              <ul class="dropdown">
+                <li><a href="#">의무사 채용공고</a></li>
+                <li><a href="#">해군 모집 정보</a></li>
+                <li><a href="#">군 채용 정보</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul
+            class="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end"
+          >
+            <li class="hw-button">
+              <a href="contact.html">우크라이나 후원</a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse"
+            data-target="#main-navbar"
+          >
+            <span></span>
+          </a>
+        </div>
+      </div>
     </nav>
 
     <div
       class="hero hero-bg overlay inner bg-light"
-      style="background-image: url('images/hero-img-1-min.jpg')"
+      style="background-image: url('images/military-word-banner.jpg')"
     >
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 h-100">
             <div class="masthead" data-aos="fade-up" data-aos-delay="">
-              <h1 class="text-white">About us</h1>
+              <h1 class="text-white">군사 용어</h1>
               <p class="mb-5 text-light-opacity-50">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Expedita voluptatum quo soluta vero perspiciatis cumque sed
-                doloremque nihil aliquid at?.
+                곧 입대하는데 군사 용어를 하나도 몰라 걱정이세요? 밀리가 알려줄
+                거예요.
               </p>
-              <p>
+              <!-- <p>
                 <a href="#" class="btn btn-primary me-4">Get in touch</a>
                 <a href="#">Learn more</a>
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -117,8 +226,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5">
-            <span class="subheading" data-aos="fade-up">About Us</span>
-            <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100">
+            <span class="subheading" data-aos="fade-up">군사 용어</span>
+            <!-- <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100">
               XedLab History
             </h2>
 
@@ -163,13 +272,13 @@
                   class="img-fluid rounded"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section bg-light">
+    <!-- <div class="section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -355,7 +464,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="site-footer">
       <div class="container">
