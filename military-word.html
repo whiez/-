@@ -587,5 +587,26 @@
     <script src="js/flatpickr.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $.ajax({
+        method: 'GET',
+        url: 'http://openapi.mnd.go.kr/3739313636353531383532353032313138/json/DS_WARHSTR_MILAFRTERMNLG/1/1',
+        // KEY: '3739313636353531383532353032313138',
+        // TYPE: 'json',
+        // SERVICE: 'DS_WARHSTR_MILAFRTERMNLG',
+        // START_INDEX: 1,
+        // END_INDEX: 1,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      }).done(function (msg) {
+        console.log(msg);
+      });
+    </script>
   </body>
 </html>
