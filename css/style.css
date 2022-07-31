@@ -12637,6 +12637,18 @@ textarea {
   padding: 20px 20px 20px 20px;
 }
 
+.team {
+  background: #eeeeee;
+  border-radius: 1000px;
+  padding: 20px 45px;
+  color: #000000;
+  display: inline-block;
+  font: normal bold 26px/1 'Open Sans', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
 .team img {
   margin-bottom: 30px;
   width: 100px;
@@ -12650,7 +12662,6 @@ textarea {
 .team h3,
 .team .h3 {
   font-size: 16px;
-  margin-bottom: 0;
 }
 
 .team .position {
