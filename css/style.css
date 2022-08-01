@@ -11558,9 +11558,9 @@ textarea {
   position: relative;
   padding-right: 20px;
 }
-.site-nav .site-navigation .site-menu .has-children > a:before {
+/* .site-nav .site-navigation .site-menu .has-children > a:before {
   position: absolute;
-  content: '\e313';
+  content: '';
   font-size: 14px;
   top: 50%;
   right: 0;
@@ -11568,7 +11568,7 @@ textarea {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-family: 'Noto Sans KR', sans-serif;
-}
+} */
 .site-nav .site-navigation .site-menu .has-children .dropdown {
   visibility: hidden;
   opacity: 0;
@@ -11589,7 +11589,7 @@ textarea {
 .site-nav .site-navigation .site-menu .has-children .dropdown.arrow-top {
   position: absolute;
 }
-.site-nav .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
+/* .site-nav .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
   display: none;
   bottom: 100%;
   left: 20%;
@@ -11599,7 +11599,7 @@ textarea {
   width: 0;
   position: absolute;
   pointer-events: none;
-}
+} */
 .site-nav .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
   display: none;
   border-color: rgba(136, 183, 213, 0);
@@ -11632,7 +11632,7 @@ textarea {
 .site-nav .site-navigation .site-menu .has-children .dropdown > li > a:hover {
   color: #10d0a1;
 }
-.site-nav
+/* .site-nav
   .site-navigation
   .site-menu
   .has-children
@@ -11641,7 +11641,7 @@ textarea {
   > a:before {
   content: '\e315';
   right: 20px;
-}
+} */
 .site-nav
   .site-navigation
   .site-menu
@@ -11886,7 +11886,7 @@ textarea {
 .site-mobile-menu .site-nav-wrap li.active > a {
   color: #10d0a1;
 }
-.site-mobile-menu .site-nav-wrap .arrow-collapse {
+/* .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -11897,8 +11897,8 @@ textarea {
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid #f8f9fa;
-}
-.site-mobile-menu .site-nav-wrap .arrow-collapse:before {
+} */
+/* .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
   font-size: 14px;
   z-index: 20;
   font-family: 'Noto Sans KR', sans-serif;
@@ -11912,7 +11912,7 @@ textarea {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-}
+} */
 .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
