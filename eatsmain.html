@@ -511,30 +511,5 @@
     <script src="js/glightbox.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/point.js"></script>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $.ajax({
-        method: 'GET',
-        url: 'https://openapi.mnd.go.kr/3739313636353531383532353032313138/json/DS_MND_PX_PARD_PRDT_INFO/1/1680/',
-        data: '',
-        dataType: 'jsonp',
-      }).done(function (msg) {
-        console.log(msg);
-        console.log(msg.DS_MND_PX_PARD_PRDT_INFO.row[0]);
-        for (
-          var i = 0;
-          i < msg.DS_MND_PX_PARD_PRDT_INFO.list_total_count;
-          i++
-        ) {
-          $('#table-append').append(
-            `<tr><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellyear}/${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellmonth}</td><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].prdtnm}</td><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].seltnstd}</td></tr>`
-          );
-        }
-      });
-    </script> -->
   </body>
 </html>

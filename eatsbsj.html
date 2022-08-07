@@ -425,7 +425,6 @@
         data: '',
         dataType: 'jsonp',
       }).done(function (msg) {
-        console.log(msg);
         const today = new Date();
         let number = [];
         const YYYY = today.getUTCFullYear().toString().padStart(2, '0');
@@ -439,7 +438,6 @@
             number.push(i);
           }
         }
-        console.log(number);
         for (var i = 0; i < number.length; i++) {
           document.querySelector('.tdy#brst').innerHTML += `${
             msg[customContent].row[number[i]]['brst']
