@@ -321,7 +321,7 @@
           i++
         ) {
           if (msg.DS_MND_ENLSTMN_DCNT_BEF_INF.row[i]['fnshday'] !== '') {
-            $('div.row.g-5').prepend(`
+            $('div.row.g-5').append(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
               <a href="${msg.DS_MND_ENLSTMN_DCNT_BEF_INF.row[i]['hmpg']}" target="_blank" style="color: black;">
                 <div class="feature-1 d-block">
