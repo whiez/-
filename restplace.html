@@ -318,18 +318,7 @@
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0bab5409d233b2d0bb7f157629a33634"
     ></script>
-    <script>
-      var container = document.getElementById('map');
-      var options = {
-        center: new kakao.maps.LatLng(
-          msg.DS_WHLAM_WLFR_VCTNINSTLT.row[i]['ltd'],
-          msg.DS_WHLAM_WLFR_VCTNINSTLT.row[i]['lngt']
-        ),
-        level: 3,
-      };
-
-      var map = new kakao.maps.Map(container, options);
-    </script>
+    <!-- <script></script> -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -347,6 +336,16 @@
           i < msg.DS_WHLAM_WLFR_VCTNINSTLT.list_total_count;
           i++
         ) {
+          var container = document.getElementById('map');
+          var options = {
+            center: new kakao.maps.LatLng(
+              msg.DS_WHLAM_WLFR_VCTNINSTLT.row[i]['ltd'],
+              msg.DS_WHLAM_WLFR_VCTNINSTLT.row[i]['lngt']
+            ),
+            level: 3,
+          };
+
+          var map = new kakao.maps.Map(container, options);
           $('div.row.g-5').append(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
               <a href="https://${msg.DS_WHLAM_WLFR_VCTNINSTLT.row[i]['hmpg_addr']}" target="_blank" style="color: black;">
