@@ -1,6 +1,5 @@
 <!--
 질병 예방법 안내 기능 추가 (API 사용 ex. https://www.data.go.kr/data/15087442/openapi.do, https://www.kdca.go.kr/npt/biz/npp/api/nppOpenApiIntrMain.do)
-최근 데이터 부터 정렬 기능 추가
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -319,10 +318,12 @@
         data: '',
         dataType: 'jsonp',
       }).done(function (msg) {
-        console.log(msg);
         for (var i = 0; i < msg.DS_MND_IFCTNCMSLD_PRSTS.list_total_count; i++) {
           let qtrdvsToMonth = '정보 없음';
-          if (msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['prsts'] !== '0') {
+          if (
+            msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['prsts'] !== '0' &&
+            msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['years'] >= '2019'
+          ) {
             if (msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['qtrdvs'] === '1') {
               qtrdvsToMonth = '1분기(1월, 2월, 3월)';
             } else if (msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['qtrdvs'] === '2') {
@@ -332,7 +333,7 @@
             } else if (msg.DS_MND_IFCTNCMSLD_PRSTS.row[i]['qtrdvs'] === '4') {
               qtrdvsToMonth = '4분기(10월, 11월, 12월)';
             }
-            $('div.row.g-5').append(`
+            $('div.row.g-5').prepend(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
               <div class="feature-1 d-block">
                 <div class="mb-3">
