@@ -173,17 +173,6 @@
       <div class="container">
         <div class="row align-items-center">
           <div>
-            <span class="subheading">군 휴양시설 위치 정보</span>
-            <div id="map" style="height: 400px"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-2">
-      <div class="container">
-        <div class="row align-items-center">
-          <div>
             <span class="subheading">군 휴양시설 운영 정보</span>
             <div class="row g-5"></div>
           </div>
@@ -315,10 +304,6 @@
     <script src="js/custom.js"></script>
     <script src="js/point.js"></script>
     <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0bab5409d233b2d0bb7f157629a33634"
-    ></script>
-    <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
@@ -330,6 +315,7 @@
         data: '',
         dataType: 'jsonp',
       }).done(function (msg) {
+        console.log(msg);
         for (
           var i = 0;
           i < msg.DS_WHLAM_WLFR_VCTNINSTLT.list_total_count;
@@ -356,30 +342,6 @@
             </div>
           `);
         }
-        var container = document.getElementById('map');
-        var options = {
-          center: new kakao.maps.LatLng(
-            msg.DS_WHLAM_WLFR_VCTNINSTLT.row[0]['ltd'],
-            msg.DS_WHLAM_WLFR_VCTNINSTLT.row[0]['lngt']
-          ),
-          level: 3,
-        };
-
-        var map = new kakao.maps.Map(container, options);
-
-        // 마커가 표시될 위치입니다
-        var markerPosition = new kakao.maps.LatLng(
-          msg.DS_WHLAM_WLFR_VCTNINSTLT.row[0]['ltd'],
-          msg.DS_WHLAM_WLFR_VCTNINSTLT.row[0]['lngt']
-        );
-
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-          position: markerPosition,
-        });
-
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);
       });
     </script>
   </body>
