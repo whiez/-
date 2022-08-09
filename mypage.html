@@ -318,10 +318,10 @@
 	
 		const HIDDEN_CLASSNAME = 'hidden';
 		const USERNAME_KEY = 'username';
-		const POINT_KEY = 'point';
+		const POINT_KEY = 'point'
 
-		let pointCheck = localStorage.getItem(POINT_KEY);
-	
+		const savedUsername = localStorage.getItem(USERNAME_KEY);
+
 		function onLoginSubmit(event) {
 			event.preventDefault();
 			loginForm.classList.add(HIDDEN_CLASSNAME);
@@ -332,23 +332,20 @@
 		
 		function paintGreetings(username) {
 			greeting.innerHTML = `<strong>${username}</strong>님 안녕하세요. 👋`;
-			point.innerHTML = `현재 ${username}님의 포인트는 <strong>${savedPoint}</strong>점 입니다.`
+			point.innerHTML = `현재 ${username}님의 포인트는 <strong>${localStorage.getItem(POINT_KEY)}</strong>점 입니다.`
 			greeting.classList.remove(HIDDEN_CLASSNAME);
 			point.classList.remove(HIDDEN_CLASSNAME);
-			}
-	
-		const savedUsername = localStorage.getItem(USERNAME_KEY);
-		let savedPoint = localStorage.getItem(POINT_KEY);
+		}
+
+		if (localStorage.getItem(POINT_KEY) === null) {
+  		localStorage.setItem(POINT_KEY, 1);
+		}
 
 		if (savedUsername === null) {
 			loginForm.classList.remove(HIDDEN_CLASSNAME);
 			loginForm.addEventListener('submit', onLoginSubmit);
 		} else {
 			paintGreetings(savedUsername);
-		}
-
-		if (pointCheck === null) {
-  		localStorage.setItem('point', 1);
 		}
 	</script>
 </body>
