@@ -428,23 +428,26 @@
         data: '',
         dataType: 'jsonp',
       }).done(function (msg) {
+        console.log(msg);
         for (var i = 0; i < msg.DS_TB_MND_TMO_INFO.list_total_count; i++) {
           if (msg.DS_TB_MND_TMO_INFO.row[i]['wkday_strtm'] !== '') {
             $('div.row.g-5').append(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
-              <div class="feature-1 d-block">
-                <div class="mb-3">
-                  <h2 style="font-weight: bold;">${msg.DS_TB_MND_TMO_INFO.row[i]['tmo_nm']}</h2>
-                  <h5>${msg.DS_TB_MND_TMO_INFO.row[i]['pstnexpln']}</h5>
+              <a href="https://map.naver.com/v5/search/${msg.DS_TB_MND_TMO_INFO.row[i]['tmo_nm']}역" target="_blank" style="color: black;">
+                <div class="feature-1 d-block">
+                  <div class="mb-3">
+                    <h2 style="font-weight: bold;">${msg.DS_TB_MND_TMO_INFO.row[i]['tmo_nm']}</h2>
+                    <h5>${msg.DS_TB_MND_TMO_INFO.row[i]['pstnexpln']}</h5>
+                  </div>
+                  <div>
+                    <h3>평일: ${msg.DS_TB_MND_TMO_INFO.row[i]['wkday_strtm']} ~ ${msg.DS_TB_MND_TMO_INFO.row[i]['wkday_endtm']}</h3>
+                    <h3>주말: ${msg.DS_TB_MND_TMO_INFO.row[i]['wkend_strtm']} ~ ${msg.DS_TB_MND_TMO_INFO.row[i]['wkend_endtm']}</h3>
+                  </div>
+                  <div>
+                    <a href="tel:${msg.DS_TB_MND_TMO_INFO.row[i]['gnrltelno']}" style="font-size: 20px;">연락처로 전화하기</a>  
+                  </div>
                 </div>
-                <div>
-                  <h3>평일: ${msg.DS_TB_MND_TMO_INFO.row[i]['wkday_strtm']} ~ ${msg.DS_TB_MND_TMO_INFO.row[i]['wkday_endtm']}</h3>
-                  <h3>주말: ${msg.DS_TB_MND_TMO_INFO.row[i]['wkend_strtm']} ~ ${msg.DS_TB_MND_TMO_INFO.row[i]['wkend_endtm']}</h3>
-                </div>
-                <div>
-                  <a href="tel:${msg.DS_TB_MND_TMO_INFO.row[i]['gnrltelno']}" style="font-size: 20px;">연락처로 전화하기</a>  
-                </div>
-              </div>
+              </a>
             </div>
           `);
           }
