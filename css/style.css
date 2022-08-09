@@ -12379,6 +12379,10 @@ textarea {
   background: #f8f9fa;
 }
 
+.hidden {
+  display: none;
+}
+
 .counter {
   text-align: left;
   border-left: 1px solid #dae0e5;
