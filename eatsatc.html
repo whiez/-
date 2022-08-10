@@ -390,14 +390,14 @@
         dataType: 'jsonp',
       }).done(function (msg) {
         const today = new Date();
-        let Number = [];
+        const Number = [];
         const YYYY = today.getUTCFullYear().toString().padStart(2, '0');
         const MM = (today.getUTCMonth() + 1).toString().padStart(2, '0');
         let DD = today.getUTCDate().toString().padStart(2, '0');
 
         document.querySelector('#tdy').innerText = `${YYYY}-${MM}-${DD}`;
         for (
-          var i = 0;
+          let i = 0;
           i < msg.DS_TB_MNDT_DATEBYMLSVC_ATC.list_total_count;
           i++
         ) {
@@ -408,7 +408,7 @@
             Number.push(i);
           }
         }
-        for (var i = 0; i < Number.length; i++) {
+        for (let i = 0; i < Number.length; i++) {
           document.querySelector('.tdy#brst').innerHTML += `${
             msg.DS_TB_MNDT_DATEBYMLSVC_ATC.row[Number[i]]['brst']
           } <br />`;
@@ -424,7 +424,7 @@
         Number = [];
         document.querySelector('#tmr').innerText = `${YYYY}-${MM}-${DD}`;
         for (
-          var i = 0;
+          let i = 0;
           i < msg.DS_TB_MNDT_DATEBYMLSVC_ATC.list_total_count;
           i++
         ) {
@@ -435,7 +435,7 @@
             Number.push(i);
           }
         }
-        for (var i = 0; i < Number.length; i++) {
+        for (let i = 0; i < Number.length; i++) {
           document.querySelector('.tmr#brst').innerHTML += `${
             msg.DS_TB_MNDT_DATEBYMLSVC_ATC.row[Number[i]]['brst']
           } <br />`;

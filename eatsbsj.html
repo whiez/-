@@ -432,12 +432,12 @@
 
         document.querySelector('#tdy').innerText = `${YYYY}-${MM}-${DD}`;
         bdName.textContent = `제 ${customNum} 부대`;
-        for (var i = 0; i < msg[customContent].list_total_count; i++) {
+        for (let i = 0; i < msg[customContent].list_total_count; i++) {
           if (msg[customContent].row[i]['dates'] === `${YYYY}-${MM}-${DD}`) {
             number.push(i);
           }
         }
-        for (var i = 0; i < number.length; i++) {
+        for (let i = 0; i < number.length; i++) {
           document.querySelector('.tdy#brst').innerHTML += `${
             msg[customContent].row[number[i]]['brst']
           } <br />`;
@@ -452,12 +452,12 @@
         DD = (today.getUTCDate() + 1).toString().padStart(2, '0');
         number = [];
         document.querySelector('#tmr').innerText = `${YYYY}-${MM}-${DD}`;
-        for (var i = 0; i < msg[customContent].list_total_count; i++) {
+        for (let i = 0; i < msg[customContent].list_total_count; i++) {
           if (msg[customContent].row[i]['dates'] === `${YYYY}-${MM}-${DD}`) {
             number.push(i);
           }
         }
-        for (var i = 0; i < number.length; i++) {
+        for (let i = 0; i < number.length; i++) {
           document.querySelector('.tmr#brst').innerHTML += `${
             msg[customContent].row[number[i]]['brst']
           } <br />`;

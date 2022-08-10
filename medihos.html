@@ -315,7 +315,7 @@
         data: '',
         dataType: 'jsonp',
       }).done(function (msg) {
-        for (var i = 0; i < msg.DS_WHLNAT_ROKAHSPT_ADDR.list_total_count; i++) {
+        for (let i = 0; i < msg.DS_WHLNAT_ROKAHSPT_ADDR.list_total_count; i++) {
           $('div.row.g-5').append(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
               <a href="https://map.naver.com/v5/search/${msg.DS_WHLNAT_ROKAHSPT_ADDR.row[i]['hsptnm']}" target="_blank" style="color: black;">

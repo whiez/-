@@ -396,7 +396,7 @@
         dataType: 'jsonp',
       }).done(function (msg) {
         for (
-          var i = 0;
+          let i = 0;
           i < msg.DS_MND_PX_PARD_PRDT_INFO.list_total_count;
           i++
         ) {
@@ -404,7 +404,7 @@
             `<tr><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellyear}/${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellmonth}</td><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].prdtnm}</td><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].seltnstd}</td></tr>`
           );
         }
-        for (var i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
           $('#favorite').append(
             `<tr><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellyear}/${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].sellmonth}</td><td>${msg.DS_MND_PX_PARD_PRDT_INFO.row[i].prdtnm}</td><td><button class="px-vote">투표하기</button></td></tr>`
           );

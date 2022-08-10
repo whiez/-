@@ -280,8 +280,6 @@
       </div>
     </div>
 
-    <!-- 출처 표기 -->
-
     <div class="section section-2">
       <div class="container">
         <div class="row align-items-center">
@@ -429,7 +427,7 @@
         dataType: 'jsonp',
       }).done(function (msg) {
         console.log(msg);
-        for (var i = 0; i < msg.DS_TB_MND_TMO_INFO.list_total_count; i++) {
+        for (let i = 0; i < msg.DS_TB_MND_TMO_INFO.list_total_count; i++) {
           if (msg.DS_TB_MND_TMO_INFO.row[i]['wkday_strtm'] !== '') {
             $('div.row.g-5').append(`
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
