@@ -1,5 +1,5 @@
 const pointCheck = localStorage.getItem('point');
-const time = 10000;
+const time = 5000;
 
 function givePointEveryMin() {
   localStorage.setItem('point', parseInt(localStorage.getItem('point')) + 1);

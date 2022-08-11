@@ -1,8 +1,231 @@
 <!--
-(하단에 point.js 추가)
-밀리포유
+계급별로 아래 서비스들 중 추천 기능 추가
 전역일 계산기
 연도별 장병 체력검정 기준 정보 (API)
 군인권센터 (https://mhrk.org/)
 etc.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<title>공지사항</title>
+</head>
+<body>
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+	<nav class="site-nav mt-3 clearfix" style="padding-bottom: 75px;">
+		<div class="container">	
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0 float-start" style="font-family: 'CWDangamAsac-Bold'; font-size: 35px;">밀리</a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
+					<li class="active"><a href="index.html">메인</a></li>
+					<!--  -->
+					<li class="has-children">
+						<a href="eatsmain.html">군 식단 정보</a>
+						<ul class="dropdown">
+							<li><a href="eatspx.html">PX 인기상품</a></li>
+							<li><a href="eatsatc.html">육군훈련소 식단 정보</a></li>
+							<li><a href="eatsbsj.html">부대별 식단 정보</a></li>
+						</ul>
+					</li>
+					<!--  -->
+					<li class="has-children">
+						<a href="restmain.html">병사 휴양 정보</a>
+						<ul class="dropdown">
+							<li><a href="restsail.html">병사 할인 혜택</a></li>
+							<li><a href="restplace.html">군 휴양시설 운영 정보</a></li>
+							<li><a href="resttmo.html">TMO(여행장병 안내소)</a></li>
+						</ul>
+					</li>
+					<!--  -->
+					<li class="has-children">
+						<a href="medimain.html">의료 정보</a>
+						<ul class="dropdown">
+							<li><a href="medisick.html">군 감염병 정보</a></li>
+							<li><a href="medihos.html">군 병원 정보</a></li>
+						</ul>
+					</li>
+					<!--  -->
+					<li><a href="communitypost.html">공지사항</a></li>
+					<!--  -->
+					<li><a href="communityfm.html">군인 커뮤니티</a></li>
+					<!--  -->
+					<li><a href="pointrank.html">포인트 순위</a></li>
+					<!--  -->
+					<li><a href="mypage.html">마이페이지</a></li>
+					<!--  -->
+					<li><a href="militools.html">밀리포유</a></li>
+				</ul>
+
+					<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
+						<li class="hw-button"><a href="https://www.unicef.or.kr/event/2022ukraine/" target="_blank">우크라이나 후원</a></li>
+					</ul>
+
+					<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+						<span></span>
+					</a>
+
+				</div>
+			</div>
+		</nav>
+
+  <!-- 계급 별 서비스 추천 -->
+
+	<div class="hero" style="padding-bottom: 20px;">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 h-100">
+					<div class="masthead" data-aos="fade-up" data-aos-delay="">
+						<h1>전역일 계산기</h1><br>
+						<p class="mb-5">자신의 전역일을 계산해보세요.</p>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- 전역일 계산기 내용 -->
+      </div>
+    </div>
+  </div>
+
+	<div class="site-footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>저작권</h3>
+						<p>이 서비스는 국방부가 제공하는 공공데이터를 활용해 개발되었습니다.</p>
+					</div> <!-- /.widget -->
+					<div class="widget">
+						<h3>SNS</h3>
+						<ul class="list-unstyled social">
+							<li><a><span class="icon-instagram" style="cursor: pointer;" onclick='
+							swal({
+								title: "아직은 해당 기능을 제공하지 않아요.",
+								icon:"error",
+								});'></span></a></li>
+							<li><a><span class="icon-twitter" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-facebook" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-linkedin" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-pinterest" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+							<li><a><span class="icon-dribbble" style="cursor: pointer;" onclick='
+								swal({
+									title: "아직은 해당 기능을 제공하지 않아요.",
+									icon:"error",
+									});'></span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-2 ml-auto">
+					<div class="widget">
+						<h3>개발자</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="mailto:choehw1130@naver.com">최현우</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				<div class="col-lg-2">
+					<div class="widget">
+						<h3>저작물 제공</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="https://www.mnd.go.kr/">국방부</a></li>
+							<li><a href="https://data.mnd.go.kr/">국방부 공공데이터포털</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+
+				<div class="col-lg-3">
+					<div class="widget">
+						<h3>개발자 연락처</h3>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="tel://0109186970">010-7918-6970</a></li>
+							<li><a href="mailto:choehw1130@naver.com">choehw1130@naver.com</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p>&copy;2022.최현우 All Rights Reserved.</a> <!-- License information: https://untree.co/license/ -->
+					</p>
+
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div> <!-- /.site-footer -->
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">로딩중...</span>
+		</div>
+	</div>
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/blacknavbar.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/flatpickr.js"></script>
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/custom.js"></script>
+  <script src="js/point.js"></script>
+</body>
+</html>

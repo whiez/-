@@ -71,11 +71,19 @@
 					<!--  -->
 					<li><a href="communityfm.html">군인 커뮤니티</a></li>
 					<!--  -->
-					<li><a href="pointrank.html">포인트 순위</a></li>
+					<li><a
+					onclick='
+						swal({
+							title: "포인트 순위 기능은 준비중이에요. 조금만 기다려주세요!",
+							icon:"warning",
+							});
+						'>포인트 순위</a></li>
+					<!-- href="pointrank.html" -->
 					<!--  -->
 					<li><a href="mypage.html">마이페이지</a></li>
 					<!--  -->
 					<li><a href="militools.html">밀리포유</a></li>
+					<!--  -->
 				</ul>
 
 					<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
@@ -122,7 +130,13 @@
 			<div class="row mb-5">
 				<div class="col-lg-5"  data-aos="fade-up" data-aos-delay="">
 					<h3 class="subheading">서비스 소개</h3>
-					<h2 class="heading">밀리는 국방부가 제공하는 검증된 공공데이터를 활용하여 실용적인 군 관련 정보를 제공하는 무료 서비스입니다.</h2>
+					<h2 class="heading">밀리는 <span style="
+					background: linear-gradient(to right, #f00, #00f);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;">대한민국 국방부</span>가 제공하는 <span style="
+					background: linear-gradient(to right, rgb(17, 206, 89), rgb(12, 205, 172));
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;">검증된 데이터</span>로 믿을만한 정보를 제공합니다.</h2>
 				</div>
 			</div>
 
@@ -187,7 +201,7 @@
 					<a href="militools.html">
 						<div class="feature-1 d-block">
 							<div class="mb-3">
-								<h1>🔨</h1>
+								<h1>👑</h1>
 							</div>
 							<div>
 								<h3 style="color: black;">밀리포유</h3>
