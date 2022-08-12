@@ -5,7 +5,6 @@
 군인권센터 (https://mhrk.org/)
 etc.
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +29,7 @@ etc.
 
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-	<title>공지사항</title>
+	<title>밀리포유</title>
 </head>
 <body>
 	<div class="site-mobile-menu site-navbar-target">
@@ -41,7 +40,7 @@ etc.
 		</div>
 		<div class="site-mobile-menu-body"></div>
 	</div>
-	<nav class="site-nav mt-3 clearfix" style="padding-bottom: 75px;">
+	<nav class="site-nav mt-3 clearfix" style="padding-bottom: 150px;">
 		<div class="container">	
 			<div class="site-navigation">
 				<a href="index.html" class="logo m-0 float-start" style="font-family: 'CWDangamAsac-Bold'; font-size: 35px;">밀리</a>
@@ -79,11 +78,19 @@ etc.
 					<!--  -->
 					<li><a href="communityfm.html">군인 커뮤니티</a></li>
 					<!--  -->
-					<li><a href="pointrank.html">포인트 순위</a></li>
+					<li><a href="#"
+					onclick='
+						swal({
+							title: "포인트 순위는 준비중이에요. 조금만 기다려주세요!",
+							icon:"info",
+							});
+						'>포인트 순위</a></li>
+					<!-- href="pointrank.html" -->
 					<!--  -->
 					<li><a href="mypage.html">마이페이지</a></li>
 					<!--  -->
 					<li><a href="militools.html">밀리포유</a></li>
+					<!--  -->
 				</ul>
 
 					<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
@@ -99,27 +106,85 @@ etc.
 		</nav>
 
   <!-- 계급 별 서비스 추천 -->
+	<div>
+		<div class="hero" style="padding-bottom: 20px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 h-100">
+						<div class="masthead" data-aos="fade-up" data-aos-delay="">
+							<h1>전역일 계산기</h1><br>
+							<p class="mb-5">자신의 전역일을 계산해보세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	<div class="hero" style="padding-bottom: 20px;">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-5 h-100">
-					<div class="masthead" data-aos="fade-up" data-aos-delay="">
-						<h1>전역일 계산기</h1><br>
-						<p class="mb-5">자신의 전역일을 계산해보세요.</p>
-          </div>
+		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- 전역일 계산기 내용 -->
+					<!--
+					육군: 18개월
+					해군: 20개월
+					공군: 21개월
+					해병대: 18개월
+					의무경찰: 18개월
+					해양경찰: 20개월
+					의무소방: 20개월
+					사회복무요원: 21개월
+					산업기능요원(보충역): 23개월
+					-->
 				</div>
 			</div>
 		</div>
 	</div>
 
-  <div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- 전역일 계산기 내용 -->
-      </div>
-    </div>
-  </div>
+	<div>
+		<div class="hero" style="padding-bottom: 20px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 h-100">
+						<div class="masthead" data-aos="fade-up" data-aos-delay="">
+							<h1>연도별 장병 체력검정<br>기준 정보</h1><br>
+							<p class="mb-5">올해의 장병 체력검정 기준을 확인해보세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- 연도별 장병 체력검정 기준 정보 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="hero" style="padding-bottom: 20px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 h-100">
+						<div class="masthead" data-aos="fade-up" data-aos-delay="">
+							<h1>군인권센터</h1><br>
+							<p class="mb-5">군인에게 인권을, 군인권센터</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- 군인권센터 소개 및 링크, 전화번호 etc. -->
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="site-footer">
 		<div class="container">
@@ -201,7 +266,7 @@ etc.
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p>&copy;2022.최현우 All Rights Reserved.</a> <!-- License information: https://untree.co/license/ -->
+					<p>&copy;2022.최현우 All Rights Reserved.</a>
 					</p>
 
 				</div>
@@ -227,5 +292,11 @@ etc.
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/custom.js"></script>
   <script src="js/point.js"></script>
+	<script>
+	swal({
+				title: "밀리포유는 준비중이에요. 조금만 기다려주세요!",
+				icon:"info",
+			});
+	</script>
 </body>
 </html>
