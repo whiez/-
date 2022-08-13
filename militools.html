@@ -113,7 +113,6 @@ etc.
 						<div class="masthead" data-aos="fade-up" data-aos-delay="">
 							<h1>밀리포유</h1><br>
 							<p class="mb-5">당신을 위해 준비했어요. 사용자 맞춤형 서비스.</p>
-							<!-- 계급 별 서비스 추천 -->
 						</div>
 					</div>
 				</div>
@@ -121,8 +120,24 @@ etc.
 		</div>
 	</div>
 
-	<div>
-		<div class="hero" style="padding-bottom: 20px;">
+	<div class="section section-2" style="padding-top: 0px;">
+		<div class="container">
+			<div class="row align-items-center" data-aos="fade-up" data-aos-delay="">
+				<div>
+					<h2 style="margin-bottom: 50px;"><strong>계급을 선택하세요.</strong></h2>
+					<div class="team" id="one">이등병</div>
+					<div class="team" id="two">일등병</div>
+					<div class="team" id="three">상등병</div>
+					<div class="team" id="four">병장</div>
+				</div>
+				<div id="rec">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="jy-cal">
+		<div class="hero" style="padding-bottom: 20px; padding-top: 0px;">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-5 h-100">
@@ -135,7 +150,7 @@ etc.
 			</div>
 		</div>
 
-		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+		<div class="section section-2" style="padding-top: 0px; padding-bottom: 100px;" data-aos="fade-up" data-aos-delay="">
 			<div class="container">
 				<div class="row align-items-center">
 					<!-- 전역일 계산기 내용 -->
@@ -150,18 +165,23 @@ etc.
 					사회복무요원: 21개월
 					산업기능요원(보충역): 23개월
 					-->
+					<h2><strong>아직 <span style="
+						background: linear-gradient(to right, rgb(20, 196, 235), #00f);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;">준비 중</span>이에요. 조금만 기다려주세요.</strong></h2>
 				</div>
+				<hr>
 			</div>
 		</div>
 	</div>
 
-	<div>
-		<div class="hero" style="padding-bottom: 20px;">
+	<div id="yjcgj">
+		<div class="hero" style="padding-bottom: 20px; padding-top: 0px;">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-5 h-100">
 						<div class="masthead" data-aos="fade-up" data-aos-delay="">
-							<h1>연도별 장병 체력검정<br>기준 정보</h1><br>
+							<h1>장병 체력검정 기준</h1><br>
 							<p class="mb-5">올해의 장병 체력검정 기준을 확인해보세요.</p>
 						</div>
 					</div>
@@ -169,17 +189,18 @@ etc.
 			</div>
 		</div>
 
-		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+		<div class="section section-2" style="padding-top: 0px;" data-aos="fade-up" data-aos-delay="">
 			<div class="container">
 				<div class="row align-items-center">
 					<!-- 연도별 장병 체력검정 기준 정보 -->
 				</div>
+				<hr>
 			</div>
 		</div>
 	</div>
 
-	<div>
-		<div class="hero" style="padding-bottom: 20px;">
+	<div id="gig">
+		<div class="hero" style="padding-bottom: 20px; padding-top: 0px;">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-5 h-100">
@@ -192,11 +213,16 @@ etc.
 			</div>
 		</div>
 
-		<div class="section section-2" style="padding-top: 0px; padding-bottom: 250px;">
+		<div class="section section-2" style="padding-top: 0px;" data-aos="fade-up" data-aos-delay="">
 			<div class="container">
 				<div class="row align-items-center">
-					<!-- 군인권센터 소개 및 링크, 전화번호 etc. -->
+					<h2 style="margin-bottom: 20px"><a href="https://mhrk.org/" target="_blank"><strong>군인권센터</strong></a></h2>
+					<div>
+						<h3><a href="tel:02-7337-119">전화 상담</a>(AM 10 : 00 ~ PM 21 : 00)</h3>
+						<h3><a href="https://mhrk.org/consultation/register" target="_blank">사이버상담실</a>(24시간 운영)</h3>
+					</div>
 				</div>
+				<hr>
 			</div>
 		</div>
 	</div>
@@ -308,10 +334,49 @@ etc.
 	<script src="js/custom.js"></script>
   <script src="js/point.js"></script>
 	<script>
-	swal({
-				title: "밀리포유는 준비중이에요. 조금만 기다려주세요!",
-				icon:"info",
-			});
+		document.querySelector('div#one').addEventListener('click', () => document.querySelector('div#rec').innerHTML =
+		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (질문)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#gig">군인권센터</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#yjcgj">장병 체력검정 기준</a></h3>')
+		document.querySelector('div#two').addEventListener('click', () => document.querySelector('div#rec').innerHTML = 
+		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#yjcgj">장병 체력검정 기준</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (질문)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3>')
+		document.querySelector('div#three').addEventListener('click', () => document.querySelector('div#rec').innerHTML =
+		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (답변)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#jy-cal">전역일 계산기</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#yjcgj">장병 체력검정 기준</a></h3>')
+		document.querySelector('div#four').addEventListener('click', () => document.querySelector('div#rec').innerHTML =
+		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#jy-cal">전역일 계산기</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (답변)</a></h3>')
+	</script>
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous">
+	</script>
+	<script>
+		$.ajax({
+			method: 'GET',
+			url: 'https://openapi.mnd.go.kr/3739313636353531383532353032313138/json/DS_MND_MILPRSN_PHSTR_OFAPRV/1/5000/',
+			data: '',
+			dataType: 'jsonp',
+		}).done(function (msg) {
+			console.log(msg);
+			// for (let i = 0; i < msg.DS_MND_MILPRSN_PHSTR_OFAPRV.list_total_count; i++) {
+			// 	$('div.row.g-5').append(`
+			// 		<div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
+			// 			<a href="https://map.naver.com/v5/search/${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hsptnm']}" target="_blank" style="color: black;">
+			// 				<div class="feature-1 d-block">
+			// 					<div class="mb-3">
+			// 						<h2 style="font-weight: bold;">${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hsptnm']}</h2>
+			// 					</div>
+			// 					<div>
+			// 						<h3>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hspt_addr']}</h3>
+			// 						<h3 style="font-weight: bold;">우편번호: ${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['zipcd']}</h3>
+			// 					</div>
+			// 					<div>
+			// 						<a href="tel:${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hspt_cntadr']}" style="font-size: 20px;">연락처로 전화하기</a>  
+			// 					</div>
+			// 				</div>
+			// 			</a>
+			// 		</div>
+			// 	`);
+			// }
+		});
 	</script>
 </body>
 </html>
