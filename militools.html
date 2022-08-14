@@ -157,7 +157,7 @@ etc.
 
 		<div class="section section-2" style="padding-top: 0px; padding-bottom: 100px;" data-aos="fade-up" data-aos-delay="">
 			<div class="container">
-				<div class="row align-items-center">
+				<div class="row align-items-center" style="padding-bottom: 30px">
 					<!-- 전역일 계산기 내용 -->
 					<!--
 					육군: 18개월
@@ -171,9 +171,9 @@ etc.
 					산업기능요원(보충역): 23개월
 					-->
 					<h2><strong>아직 <span style="
-						background: linear-gradient(to right, rgb(20, 196, 235), #00f);
+						background: linear-gradient(to right, rgb(20, 196, 235), rgb(102, 102, 247));
 						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;">준비 중</span>이에요. 조금만 기다려주세요.</strong></h2>
+						-webkit-text-fill-color: transparent;">준비중</span>이에요. 조금만 기다려주세요.</strong></h2>
 				</div>
 				<hr>
 			</div>
@@ -181,7 +181,7 @@ etc.
 	</div>
 
 	<div id="yjcgj">
-		<div class="hero" style="padding-bottom: 20px; padding-top: 0px;">
+		<div class="hero" style="padding-bottom: 0px; padding-top: 0px;">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-5 h-100">
@@ -194,15 +194,23 @@ etc.
 			</div>
 		</div>
 
-		<div class="section section-2" style="padding-top: 0px;" data-aos="fade-up" data-aos-delay="">
-			<div class="container">
-				<div class="row align-items-center">
-					<!-- 연도별 장병 체력검정 기준 정보 -->
-				</div>
-				<hr>
-			</div>
-		</div>
-	</div>
+    <div class="section section-2" style="padding-top: 0px; padding-bottom: 100px;"  data-aos="fade-up" data-aos-delay="">
+      <div class="container">
+        <div class="row align-items-center">
+					<div class="row g-5" style="margin-top: 0px;">
+						<!--  -->
+						<form id="yjcgj-slct" style="margin-top: 0px;">
+							<label for="num">나이</label>
+							<input id="age" name="num" type="number" max=99 min=0 step=1 required>
+							<input type="submit" value="체력검정 기준 확인하기" />
+						</form>
+						<!--  -->
+						<div id="yjcgj" style="padding-bottom: 50px;"></div>
+					</div>
+					<hr>
+        </div>
+      </div>
+    </div>
 
 	<div id="gig">
 		<div class="hero" style="padding-bottom: 20px; padding-top: 0px;">
@@ -222,7 +230,7 @@ etc.
 			<div class="container">
 				<div class="row align-items-center">
 					<h2 style="margin-bottom: 20px"><a href="https://mhrk.org/" target="_blank"><strong>군인권센터</strong></a></h2>
-					<div>
+					<div style="padding-bottom: 30px">
 						<h3><a href="tel:02-7337-119">전화 상담</a>(AM 10 : 00 ~ PM 21 : 00)</h3>
 						<h3><a href="https://mhrk.org/consultation/register" target="_blank">사이버상담실</a>(24시간 운영)</h3>
 					</div>
@@ -344,9 +352,16 @@ etc.
 		document.querySelector('div#two').addEventListener('click', () => document.querySelector('div#rec').innerHTML = 
 		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#yjcgj">장병 체력검정 기준</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (질문)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3>')
 		document.querySelector('div#three').addEventListener('click', () => document.querySelector('div#rec').innerHTML =
-		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (답변)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#jy-cal">전역일 계산기</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#yjcgj">장병 체력검정 기준</a></h3>')
+		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (답변)</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#jy-cal">전역일 계산기</a></h3>')
 		document.querySelector('div#four').addEventListener('click', () => document.querySelector('div#rec').innerHTML =
 		'<h2 data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px;">추천 서비스입니다.</h2> <h3 data-aos="fade-up" data-aos-delay="150"><a href="militools.html#jy-cal">전역일 계산기</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="restmain.html">병사 휴양 정보</a></h3> <h3 data-aos="fade-up" data-aos-delay="150"><a href="communityfm.html">군인 커뮤니티 (답변)</a></h3>')
+	</script>
+	<script>
+		swal({
+			title: "베타 페이지 안내",
+			text: "개발중인 페이지에요. 8월 말에 개발 완료 예정입니다.",
+			icon:"success",
+		});
 	</script>
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.js"
@@ -361,26 +376,35 @@ etc.
 			dataType: 'jsonp',
 		}).done(function (msg) {
 			console.log(msg);
-			// for (let i = 0; i < msg.DS_MND_MILPRSN_PHSTR_OFAPRV.list_total_count; i++) {
-			// 	$('div.row.g-5').append(`
-			// 		<div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
-			// 			<a href="https://map.naver.com/v5/search/${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hsptnm']}" target="_blank" style="color: black;">
-			// 				<div class="feature-1 d-block">
-			// 					<div class="mb-3">
-			// 						<h2 style="font-weight: bold;">${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hsptnm']}</h2>
-			// 					</div>
-			// 					<div>
-			// 						<h3>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hspt_addr']}</h3>
-			// 						<h3 style="font-weight: bold;">우편번호: ${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['zipcd']}</h3>
-			// 					</div>
-			// 					<div>
-			// 						<a href="tel:${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['hspt_cntadr']}" style="font-size: 20px;">연락처로 전화하기</a>  
-			// 					</div>
-			// 				</div>
-			// 			</a>
-			// 		</div>
-			// 	`);
-			// }
+			let jgrght = [];
+			document.querySelector('#yjcgj-slct').addEventListener('submit', (event) => {
+  			event.preventDefault();
+				let age = document.querySelector('#yjcgj-slct input#age').value;
+				jgrght = [];
+				for (let i = 0; i < msg.DS_MND_MILPRSN_PHSTR_OFAPRV.list_total_count; i++) {
+					if (Number(msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['age_lwlmtprcdc']) <= age && age <= Number(msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[i]['age_uprlmtprcdc'])) {
+						jgrght.push(i);
+					}
+				}
+				console.log(jgrght);
+				$('div#custom').remove();
+				for (let i = 0; i < jgrght.length; i++) {
+					$('div#yjcgj').append(`
+						<div class="col-lg-4" id="custom" aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
+							<div class="feature-1 d-block">
+								<div class="mb-3">
+									<h2>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['kind']}</h2>
+								</div>
+								<div>
+									<h3>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['age_lwlmtprcdc']}세~${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['age_uprlmtprcdc']}세</h3>
+									<h3>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['std_lwlmtprcdc']}~${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['std_uprlmtprcdc']}</h3>
+									<h3>${msg.DS_MND_MILPRSN_PHSTR_OFAPRV.row[jgrght[i]]['grd']}</h3>
+								</div>
+							</div>
+						</div>
+					`);
+				}
+			});
 		});
 	</script>
 </body>
